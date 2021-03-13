@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Game Card</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="header1">
+        <h1>Tugas ARC Day-2</h1>
+    </div>
+<div class="allcard">
+	<div class="card">
+		<div class="card__inner">
+			<div class="card__face card__face--front">
+				<h2>KRU-1</h2>
+			</div>
+			<div class="card__face card__face--back">
+				<div class="card__content">
+					<div class="card__header">	
+						<h2> Kak Niel</h2>
+						<img src=".\asset\niel.jpg" class="center">
+					</div>
+					<div class="card__body">
+						<h3>Nathaniel Jason</h3>
+						<p>Kak Niel merupakan alumni SMAK 1 Penabur yang sekarang mengambil Teknik Informatika.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="card">
+		<div class="card__inner">
+			<div class="card__face card__face--front">
+				<h2>KRU-2</h2>
+			</div>
+			<div class="card__face card__face--back">
+				<div class="card__content">
+					<div class="card__header">	
+						<h2>Kak James</h2>
+                        <img src=".\asset\james.jpg" class="center">
+					</div>
+					<div class="card__body">
+						<h3>James Chandra</h3>
+						<p>Kak James berasal dari sekolah Jubilee, sekarang ia kuliah di satu jurusan dengan Kak Niel</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="card">
+		<div class="card__inner">
+			<div class="card__face card__face--front">
+				<h2>CAKRU-1</h2>
+			</div>
+			<div class="card__face card__face--back">
+				<div class="card__content">
+					<div class="card__header">	
+						<h2>Tania</h2>
+						<img src=".\asset\tania.jpg" class="center">
+					</div>
+					<div class="card__body">
+						<h3>Tania Junardi</h3>
+						<p>Tania hobi menonton, cantik, dan tidak pelit, namun sangat lemot :v. Tania takut sama anjing padahal lucu :(</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="card">
+		<div class="card__inner">
+			<div class="card__face card__face--front">
+				<h2>CAKRU-2</h2>
+			</div>
+			<div class="card__face card__face--back">
+				<div class="card__content">
+					<div class="card__header">	
+						<h2>Patrick</h2>
+						<img src=".\asset\pat.jpg" class="center">
+					</div>
+					<div class="card__body">
+						<h3>Patrick Amadeus</h3>
+						<p>Patrick hobi main dota dan basket (walau pendek), ia sering mengcarry teman-temannya, sungguh baik Patrick ini<3, terimakasih, Patrick! </p>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="card">
+		<div class="card__inner">
+			<div class="card__face card__face--front">
+				<h2>CAKRU-3</h2>
+			</div>
+			<div class="card__face card__face--back">
+				<div class="card__content">
+					<div class="card__header">	
+						<h2>Nelsen </h2>
+						<img src=".\asset\nel.jpg" class="center">
+					</div>
+					<div class="card__body">
+						<h3>Nelsen Putra</h3>
+						<p>Nelsen hobi nonton intm, ia baik mau antar jemput kemana saja tapi merepotkan karena perlu dibangunkan saat kelas >:(</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="card">
+		<div class="card__inner">
+			<div class="card__face card__face--front">
+				<h2>CAKRU-4</h2>
+			</div>
+			<div class="card__face card__face--back">
+				<div class="card__content">
+					<div class="card__header">	
+						<h2>Jervan</h2>
+						<img src=".\asset\jervan.jpg" class="center">
+					</div>
+					<div class="card__body">
+						<h3>Jeremy Evan</h3>
+						<p>Jervan suka negara belanda, keunikannya adalah mengancing baju dari bawah :D</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<script>
+        const card = document.querySelectorAll('.card__inner');
+
+        card.forEach((card) => {
+        card.addEventListener("click", () => {
+        card.classList.toggle("is-flipped");
+     });
+});
+    </script>
+</body>
+</html>
